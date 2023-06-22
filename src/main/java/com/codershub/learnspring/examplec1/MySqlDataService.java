@@ -1,5 +1,8 @@
 package com.codershub.learnspring.examplec1;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class MySqlDataService implements DataService{
     @Override
     public int[] retrieveData() {
