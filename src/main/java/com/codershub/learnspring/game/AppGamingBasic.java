@@ -18,12 +18,6 @@ public class AppGamingBasic {
     }
     public static void main(String[] args) {
 
-//        var marioGame = new MarioGame();
-//        GamingConsole superContraGame = new  SuperContraGame();
-//        GamingConsole packManGame = new PackManGame();
-//        var gameRunner = new GameRunner(packManGame);
-//        gameRunner.run();
-
         var context = new AnnotationConfigApplicationContext(AppGamingBasic.class);
         context.getBean(GamingConsole.class).down();
         context.getBean(GameRunner.class).run();

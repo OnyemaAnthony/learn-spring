@@ -2,6 +2,7 @@ package com.codershub.learnspring;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 record  Person(String name, int age){};
 record  Address(String firstLine, String city){};
@@ -19,6 +20,7 @@ public class HelloWorldConfig {
     }
 
     @Bean
+    @Primary
     Person person(){
         Person anthony = new Person("Anthony",20);
         return  anthony;
