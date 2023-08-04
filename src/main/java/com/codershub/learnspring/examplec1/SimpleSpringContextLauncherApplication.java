@@ -8,8 +8,6 @@ public class SimpleSpringContextLauncherApplication {
     public static void main (String[] args) {
         var context = new ClassPathXmlApplicationContext("config.xml");
         Arrays.stream(context.getBeanDefinitionNames ()).forEach (System.out::println);
-        System.out.println(context.getBean("name"));
-
 
     }
 
