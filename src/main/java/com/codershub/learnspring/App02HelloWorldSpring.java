@@ -5,9 +5,6 @@ import java.util.Arrays;
 
 public class App02HelloWorldSpring {
     public static void main(String[] args) {
-     var context =    new AnnotationConfigApplicationContext(HelloWorldConfig.class);
-        System.out.println(context.getBeanDefinitionNames());
-        Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
 
 
     }
